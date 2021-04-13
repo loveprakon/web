@@ -15,7 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from blogs import views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.hello),
+    path('page1', views.page1),
+    path('createForm', views.createForm),
+    path('addForm', views.adduser),
+    path('loginForm', views.loginform),
+    path('login', views.login),
+    path('logout', views.logout),
 ]
